@@ -1,0 +1,171 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Simply Tri's</title>
+	<link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+	<link href='reset.css' rel='stylesheet' type='text/css'>
+
+	<style type="text/css" media="screen">
+		/* Palette: http://www.colourlovers.com/palette/1930/cheer_up_emo_kid*/
+
+		/* Base Design
+		------------------------------------*/
+		body {background-color: #FEFEFE; font-family: 'Permanent Marker'; color:#556270;}
+		#wrapper {margin: 20px auto; padding:0 10px; min-width:500px; max-width:700px;}
+		#wrapper > * > a, #wrapper > * > a:visited {color:#556270;}
+		#wrapper > * > a:hover {color:#748495;}
+		a:link, a:visited {text-decoration:none;}
+
+		/* twitter
+		------------------------------------*/
+		#twitter {position:fixed; right:5px; bottom:5px; opacity:.6; background-image:url(images/twitter.png); width:32px; height:32px;}
+		#twitter:hover {opacity:1;}
+
+		/* Header
+		------------------------------------*/
+		h1 {text-align: center; font-size:50px;}
+
+
+		/* Menu
+		------------------------------------*/
+		#menu {width:100%; margin: 20px 0 30px; }
+		#menu a, #menu a:visited {color:#556270;}
+		#menu a:hover {color:#748495;}
+		#menu tbody:first-child th {padding-top:0;}
+		#menu th {font-size: 30px; padding: 30px 0 5px;}
+		#menu td {font-size: 20px;}
+		.ingredients {color:#999;}
+
+			/* Picture Positioning */
+		div.positioning-shell {position:relative;}
+		div.image-shell {position:absolute; top:5px; visibility:hidden; padding-top:5px; background-repeat: no-repeat;  background-image: url(images/tipsy.gif); background-position: top center;}
+		div.image-shell img {cursor:pointer; border:5px solid black; -moz-border-radius:3px; -webkit-border-radius:3px; -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, .5); -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, .5);}
+		#menu tbody:hover .image-shell {visibility:visible;}
+		/*#menu tbody .image-shell:hover {visibility:hidden;}*/
+
+
+
+		/* Info Sections
+		------------------------------------*/
+		#wrapper > div {border-top: 3px dashed #C7F464; padding: 20px 0;}
+
+		#about * {color:#4ECDC4; font-size:20px;}
+		#about > p {margin-top:10px;}
+		#about > p:first-child {margin:0;}
+		#about a:hover {color:#83dcd6;}
+
+		#tv-goodness * {color:#FF7C7C;}
+		#tv-goodness .morning * {color:#ff9e9e;}
+		#tv-goodness h2 {font-size:23px; text-align:center; margin-bottom:3px;}
+		#tv-goodness h3 {width:90%; margin:0 auto; font-size:16px; text-align:center; padding-bottom:5px; margin-bottom:5px; border-bottom:1px dotted #FF6B6B;}
+		#tv-goodness table {font-size:18px;}
+		#tv-goodness td {padding:3px;}
+		#tv-goodness td:first-child {text-align:right;}
+
+		#footer {text-align:center; font-size:14px; margin:30px 0 0;}
+
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(function(){
+			$('div.image-shell')
+				.click(function(){ $(this).css('visibility', 'hidden') })
+				.mouseout(function(){ $(this).attr('style','') })
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<a id="twitter" href="http://twitter.com/simplytris"><span></span></a>
+		<h1 id="top"><a href="">Simply Tri's</a></h1>
+		<table id="menu">
+			<tbody id="breakfast-burrito">
+				<tr>
+					<th><a href="#breakfast-burrito">Breakfast Burrito</a></th>
+					<th>$1</th>
+				</tr>
+				<tr><td>This is what your body deserves after the tequila shots you had last night.</td></tr>
+				<tr><td class="ingredients">Flour Tortilla, Sausage, Eggs, Cheese, &amp; Salsa.</td></tr>
+				<tr><td><div class="positioning-shell"><div class="image-shell"><img src="images/breakfast-burrito.jpg" /></div></div></td></tr>
+			</tbody>
+
+			<tbody id="breakfast-sandwich">
+				<tr>
+					<th><a href="#breakfast-sandwich">Breakfast Sandwich</a></th>
+					<th>$2</th>
+				</tr>
+				<tr><td>McMuffin got nuthin' on this.</td></tr>
+				<tr><td class="ingredients">English muffin, Sausage, Eggs, Cheese, Tomatoes, &amp; Scallions.</td></tr>
+				<tr><td><div class="positioning-shell"><div class="image-shell"><img src="images/breakfast-sandwich.jpg" /></div></div></td></tr>
+			</tbody>
+
+			<tbody id="ramen">
+				<tr>
+					<th><a href="#ramen">Ramen</a></th>
+					<th>$2</th>
+				</tr>
+				<tr><td>This is THE WAY you make Ramen.</td></tr>
+				<tr><td class="ingredients">Ramen (Chicken), Eggs, Scallions, &amp; fried garlic.</td></tr>
+				<tr><td><div class="positioning-shell"><div class="image-shell"><img src="images/ramen.jpg" /></div></div></td></tr>
+			</tbody>
+
+			<tbody id="og-sandwich">
+				<tr>
+					<th><a href="#og-sandwich">OG Sandwich</a></th>
+					<th>$2</th>
+				</tr>
+				<tr><td>Nothing is more original and gangsta than this sandwich.</td></tr>
+				<tr><td class="ingredients">Ham/Turkey/Roast Beef, White/Wheat Bread, Cheese, Tomatoes, &amp; Lettuce.</td></tr>
+				<tr><td><div class="positioning-shell"><div class="image-shell"><img src="images/og-sandwich.jpg" /></div></div></td></tr>
+			</tbody>
+
+			<tbody id="grilled-cheese">
+				<tr>
+					<th><a href="#grilled-cheese">Grilled Cheese Sandwich</a></th>
+					<th>$1</th>
+				</tr>
+				<tr><td>Just straight up American on that white.... bread.</td></tr>
+				<tr><td class="ingredients">White Bread &amp; American Cheese.</td></tr>
+				<tr><td><div class="positioning-shell"><div class="image-shell"><img src="images/grilled-cheese.jpg" /></div></div></td></tr>
+			</tbody>
+
+			<tbody id="pbnj">
+				<tr>
+					<th><a href="#pbnj">PB &amp; J</a></th>
+					<th>$1</th>
+				</tr>
+				<tr><td>Kick it like we're back in 3rd grade.</td></tr>
+				<tr><td class="ingredients">Peanut Butter, Strawberry/Grape Jelly, &amp; White Bread.</td></tr>
+				<tr><td><div class="positioning-shell"><div class="image-shell"><img src="images/pbnj.jpg" /></div></div></td></tr>
+			</tbody>
+		</table>
+		<div id="about">
+			<p>
+				Simply Tri's makes food just like you do right at home, but just closer to campus.
+				It's just as comforting, delicious, and cheap. Just enjoy the simple meal and you won't regret the deal.
+				Come around when it opens and we'll have complimentary coffee or tea while it lasts.
+			</p>
+			<p>Opens weekdays from 11AM to 3PM. Cash Only.<br/>765 Jenkins Ave. #4, Norman OK 73069. <br/>918.607.3687</p>
+			<p><br/>
+				<a href="http://twitter.com/trinonsense">Tri Noensie</a>- The crazy man behind Simply Tri's. <br/>
+				<a href="http://twitter.com/mueller_andy">Andy Mueller</a>- The roommate that has to deal with Tri's shenanigans.
+			</p>
+		</div>
+		<div id="tv-goodness">
+			<h2>TV Goodness</h2>
+			<h3>Something to watch as you enjoy the meal</h3>
+			<table>
+				<tr class="morning"><td>10</td><td>AM</td><td>Price Is Right</td></tr>
+				<tr class="morning"><td>11</td><td>AM</td><td>Real Housewives of Orange County</td></tr>
+				<tr><td>12</td><td>PM</td><td>Maury</td></tr>
+				<tr><td>1</td><td>PM</td><td>30 Rock</td></tr>
+				<tr><td>2</td><td>PM</td><td>Netflix of the Day</td></tr>
+			</table>
+		</div>
+		<p id="footer">Copyright 2011 &#xA9; <a href="http://initfortheladies.com">initfortheladies.</a> <a href="#top">-Top-</a></p>
+	</div>
+</body>
+</html>
